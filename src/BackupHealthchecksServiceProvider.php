@@ -10,7 +10,8 @@ class BackupHealthchecksServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/backup-healthchecks.php', 'backup-healthchecks'
+            __DIR__.'/../config/backup-healthchecks.php',
+            'backup-healthchecks'
         );
 
         $this->app->register(EventServiceProvider::class);

@@ -9,7 +9,7 @@ class BackupWasSuccessful
 {
     public function handle(BackupWasSuccessfulEvent $event)
     {
-        if(!config('backup-healthchecks.healthchecks_url')) {
+        if (! config('backup-healthchecks.healthchecks_url')) {
             return;
         }
 
